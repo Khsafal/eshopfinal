@@ -1,0 +1,52 @@
+body{
+	background-image: url(https://hdqwalls.com/download/light-abstract-simple-background-iv-1336x768.jpg);
+}
+h1{
+	right: 20;
+	top: 20;
+	color: white;
+	}
+h2{
+	text-align: center;
+	font-size: 16px;
+}
+
+form{
+	margin-top: 50px;
+    
+}
+.hello1{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: black;
+	margin-bottom: 16px;
+}
+.hello.subimt{
+	background: red;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 58px;
+	margin top: 20px;
+}
+.footer{
+	bottom: 0;
+	text-align: center;
+	background: red;
+	text-align: center;
+}
+.footer p{
+	padding: 16px;
+	color: orange;
+
+}
+.dip{
+
+  border-radius: 8px;
+
+}
