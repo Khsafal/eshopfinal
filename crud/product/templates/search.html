@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>search</title>
+</head>
+<body>
+    <div class="books">
+        <h1>Search</h1>
+    </div>
+    <div class="bar">
+        <form method="POST" action="">
+            {% csrf_token %}
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i>Search</button>
+        </form>
+    </div>
+
+            {% if sr %}
+            {% for rows in sr %}
+            <table >
+                <tr>
+                  <td>Item Name</td>
+                    <td>{{rows.product_name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Item Code</td>
+                        <td>{{rows.product_code}}</td>
+                    </tr>
+                    <tr>
+                        <td>Item Price</td>
+                        <td>{{rows.product_price}}</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>Describe</td>
+                        <td>{{rows.describe}}</td>
+                    </tr> -->
+                    </table>
+            {% endfor %}
+         
+            {% endif %}
+                   </header>
+                    
+    
+</body>
+</html>
